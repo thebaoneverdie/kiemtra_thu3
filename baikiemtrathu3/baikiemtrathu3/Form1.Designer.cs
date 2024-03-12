@@ -28,12 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            MatKhau = new Label();
+            txtMatKhau = new TextBox();
+            SuspendLayout();
+            // 
+            // MatKhau
+            // 
+            MatKhau.AutoSize = true;
+            MatKhau.Location = new Point(141, 125);
+            MatKhau.Name = "MatKhau";
+            MatKhau.Size = new Size(68, 20);
+            MatKhau.TabIndex = 0;
+            MatKhau.Text = "MatKhau";
+            // 
+            // txtMatKhau
+            // 
+            txtMatKhau.Location = new Point(271, 130);
+            txtMatKhau.Name = "txtMatKhau";
+            txtMatKhau.Size = new Size(125, 27);
+            txtMatKhau.TabIndex = 1;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(txtMatKhau);
+            Controls.Add(MatKhau);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label MatKhau;
+        private TextBox txtMatKhau;
     }
 }
